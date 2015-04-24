@@ -1,0 +1,30 @@
+/*@font-face {
+	
+	font-family: "Noto Sans";
+	font-weight: 400;
+	font-style: normal;
+
+	src: url("../fonts/notosans/notosans.eot");
+	src: url("../fonts/notosans/notosans.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/notosans/notosans.woff") format("woff"),
+		 url("../fonts/notosans/notosans.ttf") format("truetype"),
+		 url('../fonts/notosans/notosans.svg#notosans') format('svg');
+}*/
+
+Font(fz, lh)
+	if (fz)
+		font-size fz
+		if (lh)
+			line-height lh
+
+
+BaseFont(fz, lh)
+	font-family 'Helvetica Neue', Arial, sans-serif
+	Font fz lh
+
+
+HeadingFont(fz, lh) 
+	font-family 'Roboto Slab', 'Times New Roman', serif
+	font-weight 600
+	Font fz lh
+
